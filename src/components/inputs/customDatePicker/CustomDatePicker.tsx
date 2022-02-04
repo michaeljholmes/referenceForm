@@ -4,8 +4,6 @@ import { TextField, Typography } from "@mui/material";
 import { DatePicker, DatePickerProps, LocalizationProvider } from "@mui/lab";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 
-//Todo - find way to disable date picker
-
 export interface CustomDatePickerProps
   extends Omit<DatePickerProps, "renderInput"> {
   error: string | undefined;

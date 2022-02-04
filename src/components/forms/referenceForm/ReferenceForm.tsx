@@ -87,10 +87,12 @@ export const ReferenceForm = ({
                           <FormikDatePicker
                             name={`employers.${index}.start_date`}
                             label="Start date"
+                            disabled={isSubmittingForm}
                           />
                           <FormikDatePicker
                             name={`employers.${index}.end_date`}
                             label="End date"
+                            disabled={isSubmittingForm}
                           />
                         </FieldsRow>
                       </FormLayout>
