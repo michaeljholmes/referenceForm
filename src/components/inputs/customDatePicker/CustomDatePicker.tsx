@@ -7,7 +7,7 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 export interface CustomDatePickerProps
   extends Omit<DatePickerProps, "renderInput"> {
   error: string | undefined;
-  onFocus: any;
+  onFocus: () => void;
 }
 
 export const CustomDatePicker = ({

@@ -17,7 +17,7 @@ export const FormikDatePicker = ({ label, name, disabled = false }: FormikDatePi
       onChange={(date: Date | unknown) => {
         setFieldValue(field.name, date);
       }}
-      onFocus={() => setTouched(true)}
+      onFocus={() => {setTouched(true)}}
       error={touched ? error : ""}
       label={label}
       disabled={disabled}
